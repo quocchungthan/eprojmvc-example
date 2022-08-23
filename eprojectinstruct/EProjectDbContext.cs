@@ -5,7 +5,7 @@ namespace eprojectinstruct
 {
     public class EProjectDbContext : DbContext
     {
-        public EProjectDbContext(string nameOrConnectionString) : base("eproject_constr")
+        public EProjectDbContext() : base("eproject_constr")
         {
         }
 

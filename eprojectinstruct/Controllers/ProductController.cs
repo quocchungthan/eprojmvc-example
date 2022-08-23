@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -9,8 +11,13 @@ namespace eprojectinstruct.Controllers
     public class ProductController : Controller
     {
         // GET: Product
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
+            var dbContext = new EProjectDbContext();
+            var countProducts = await dbContext.Products.CountAsync();
+
+            ViewBag.Message = $"Number of products: {countProducts}";
+
             return View();
         }
 
