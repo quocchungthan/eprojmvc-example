@@ -24,7 +24,7 @@ namespace eprojectinstruct.Controllers
         {
             var countProducts = await Set().CountAsync();
 
-            ViewBag.Message = $"Number of products: {countProducts}";
+            ViewBag.Message = $"Number of objects: {countProducts}";
 
             return View();
         }
