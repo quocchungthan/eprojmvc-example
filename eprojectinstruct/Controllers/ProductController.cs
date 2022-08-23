@@ -36,11 +36,14 @@ namespace eprojectinstruct.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(Product productForm)
+        public async Task<ActionResult> Create(Product productForm)
         {
             try
             {
-                // TODO: Add insert logic here
+                var dbContext = new EProjectDbContext();
+
+                dbContext.Products.Add(productForm);
+                await dbContext.SaveChangesAsync();
 
                 return RedirectToAction("Index");
             }
