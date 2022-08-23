@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eprojectinstruct.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace eprojectinstruct.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Product productForm)
         {
             try
             {
