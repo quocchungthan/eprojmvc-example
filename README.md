@@ -6,3 +6,14 @@ Click Tools -> Package Manager Console & type:
 ```
 Enable-Migrations
 ```
+Go to Employee add new string property Email
+
+Use this command to generate new Migration
+```
+Add-Migration AdjustEmployeeModel
+```
+
+To apply the latest migrations to database, run following command:
+```
+Update-Database
+```

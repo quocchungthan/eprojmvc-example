@@ -139,6 +139,10 @@
     <Compile Include="Migrations\202208231703234_InitialCreate.designer.cs">
       <DependentUpon>202208231703234_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208231719138_AdjustEmployeeModel.cs" />
+    <Compile Include="Migrations\202208231719138_AdjustEmployeeModel.designer.cs">
+      <DependentUpon>202208231719138_AdjustEmployeeModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
@@ -211,6 +215,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202208231703234_InitialCreate.resx">
       <DependentUpon>202208231703234_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208231719138_AdjustEmployeeModel.resx">
+      <DependentUpon>202208231719138_AdjustEmployeeModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
